@@ -127,6 +127,10 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		position: relative;
+		background-color: #00c7fe; /* The background color you want */
+		border-radius: 50%; /* This makes it round, remove if you want square */
+		color: #ffffff; /* This sets the icon color */
+		display: inline-block; /* This helps in handling the padding and maintaining inline positioning */
 	}
 
 		.icon:before {
