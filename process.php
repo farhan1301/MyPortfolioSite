@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // reCAPTCHA validation
-    $recaptchaSecret = '6Ld_PfIoAAAAAMoGFQrxmjKJx6ywwt1vrkB8oNTz';
+    $recaptchaSecret = 'key';
     $recaptchaResponse = $_POST['g-recaptcha-response'];
 
     $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$recaptchaSecret&response=$recaptchaResponse");
