@@ -18,3 +18,19 @@
     border-radius: 50%; /* makes the image round */
     margin-right: 20px; /* space between the image and your name */
 }
+
+#copyEmailMessage {
+  display: none;
+  background-color: rgba(0,0,0,0.7);  /* semi-transparent black background */
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-size: 0.9em;
+  position: absolute; /* This will position the message relative to the nearest positioned parent element */
+  top: 85px;  /* Adjust according to your requirement */
+  left: 50%;
+  transform: translateX(-50%);  /* This will center the message horizontally below the icon */
+  white-space: nowrap;  /* This will prevent the message from wrapping to the next line */
+  z-index: 10;  /* This ensures the message appears above other elements */
+}
+
