@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XR4B23PJRR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XR4B23PJRR');
+    </script>  
+    <title>Farhan's Portfolio - Contact Me</title>
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+    <div id="wrapper">
+        <div id="bg" role="img" aria-label="Natural hills background image"></div>
+        <div id="overlay"></div>
+        <div id="main">
+
+            <!-- Header -->
+            <header id="header">
+                <!-- Contact Form -->
+                <form id="contactForm" action="process.php" method="post">
+
+                    <!-- First Name -->
+                    <label for="firstName">First name:</label>
+                    <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+
+                    <!-- Last Name -->
+                    <label for="lastName">Last name:</label>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+
+                    <!-- Email -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your e-mail">
+
+                    <!-- Message -->
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required placeholder="Enter your text message"></textarea>
+
+                    <!-- reCAPTCHA widget -->
+                    <div class="g-recaptcha" data-sitekey="6LdrGPIoAAAAAEVeWrzYFHlIxYuXQQxz1tm6XmHi"></div>
+
+                    <input type="submit" value="Send Email">
+                </form>
+
+                <a href="index.html">Back to Home</a>
+            </header>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <p>"Consistent hard work is the only key to success."</p>
+            </footer>
+
+        </div>
+    </div>
+    <script>
+        window.onload = function() { document.body.classList.remove('is-preload'); }
+        window.ontouchmove = function() { return false; }
+        window.onorientationchange = function() { document.body.scrollTop = 0; }
+    </script>
+    <script src="index.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
