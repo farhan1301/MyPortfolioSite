@@ -34,3 +34,29 @@
   z-index: 10;  /* This ensures the message appears above other elements */
 }
 
+/* Base style for the contact-btn */
+.contact-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 20px; /* Adds space around the text */
+  color: #000000; /* White text color */
+  background-color: #ffffff; /* Dark gray background */
+  text-decoration: none; /* Remove the underline */
+  font-size: 18px; /* Increase font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 30px; /* Makes it look like a button with rounded edges */
+  border: 2px solid #ffffff; /* White border for better contrast */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition for hover and press effect */
+}
+
+/* Hover effect for the contact-btn */
+.contact-btn:hover {
+  background-color: #555; /* Slightly lighter gray on hover */
+  transform: scale(1.05); /* Slightly scale the button up on hover */
+}
+
+/* Pressed effect for the contact-btn */
+.contact-btn:active {
+  transform: scale(0.95); /* Scale down the button when pressed */
+}
+

@@ -1,12 +1,19 @@
 #contactForm {
-    max-width: 400px;
-    margin: 0 auto;
+    max-width: 350px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
-    color: black;
+    font-weight: 900;
+    font-size: 1.5em;
+    color: #333;
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     text-align: left;
 }
 
@@ -14,32 +21,39 @@ input[type="text"], input[type="email"], textarea {
     display: block;
     width: 100%;
     margin-bottom: 15px;
-    padding: 5px;
-    color: black; /* text inside the fields will be black */
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 8px;
+    font-size: 1.1em;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
 }
 
 input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
-    color: #888; /* you can adjust the placeholder color if needed */
+    color: #888;
+    font-style: italic;
 }
 
 .g-recaptcha {
     margin-bottom: 15px;
 }
 
-input[type="submit"] {
+input[type="submit"]{
+    font-size: 1.2em;
     display: inline-block;
-    background-color: #333; /* dark gray */
-    color: #fff; /* white text */
+    background-color: #2C3E50;
+    color: #ffffff;
+    font-weight: bold;
     border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 10px 20px; /* Adjusted padding */
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: #555; /* slightly lighter gray on hover */
+    background-color: #34495E;
+    transform: scale(1.05);
 }
+
 
