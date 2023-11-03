@@ -38,6 +38,7 @@
 .contact-btn {
   display: inline-block;
   margin-top: 25px;
+  margin-left: 25px;
   padding: 10px 20px; /* Adds space around the text */
   color: #000000; /* White text color */
   background-color: #ffffff; /* Dark gray background */
