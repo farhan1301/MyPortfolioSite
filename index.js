@@ -23,14 +23,5 @@ document.addEventListener('DOMContentLoaded', function() {
     
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Assuming your send message button has an id of 'sendMessageButton'
-    var sendMessageButton = document.getElementById('sendMessageButton');
 
-    if (sendMessageButton) {
-        sendMessageButton.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default anchor action
-            document.getElementById('contactForm').submit(); // Submit the form
-        });
-    }
-});
+
