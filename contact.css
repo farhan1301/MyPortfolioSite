@@ -1,17 +1,20 @@
 #contactForm {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.9em;
+	letter-spacing: -0.025em;
+	line-height: 1.75em;
     max-width: 350px;
     margin: 40px auto;
-    font-family: 'Arial', sans-serif;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-label {
+#contactForm label {
+    font-size: 1.3em; 
     font-weight: 900;
-    font-size: 1.5em;
-    color: #333;
+    color: #000000;
     display: block;
     margin-bottom: 10px;
     text-align: left;
@@ -23,37 +26,73 @@ input[type="text"], input[type="email"], textarea {
     margin-bottom: 15px;
     padding: 8px;
     font-size: 1.1em;
-    color: #333;
+    color: #000000;
     border: 2px solid #ccc;
     border-radius: 5px;
     background-color: #f8f8f8;
 }
 
-input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
+#contactForm input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::placeholder {
     color: #888;
-    font-style: italic;
 }
 
 .g-recaptcha {
     margin-bottom: 15px;
 }
 
-input[type="submit"]{
+#contactForm textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    font-size: 1.1em;
+    color: #333; /* make sure this is set to a color visible against the background */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    resize: none; /* Prevent manual resizing */
+    overflow: auto; /* Allows box to scroll internally if content exceeds box size */
+}
+
+.button {
     font-size: 1.2em;
     display: inline-block;
-    background-color: #2C3E50;
+    background-color: #000000;
     color: #ffffff;
     font-weight: bold;
     border: none;
-    padding: 10px 20px; /* Adjusted padding */
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none; /* Removes underline from link */
     transition: background-color 0.3s ease, transform 0.3s ease;
+    text-align: center; /* Center text inside the button */
+    margin: 0 5px; /* Spacing between buttons */
 }
 
-input[type="submit"]:hover {
+.button:hover {
     background-color: #34495E;
     transform: scale(1.05);
 }
 
+input[type="submit"].button, a.button {
+    -webkit-appearance: none; /* Removes default webkit styles */
+    -moz-appearance: none; /* Removes default Mozilla styles */
+    appearance: none; /* Removes default styles */
+}
 
+@media only screen and (max-width: 768px) {
+    label {
+        font-size: 1.2em; /* Smaller font size on smaller screens */
+    }
+
+    input[type="submit"] {
+        padding: 8px 16px; /* Smaller padding on smaller screens */
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #contactForm {
+        max-width: 500px; /* Larger max-width for larger screens */
+    }
+}
