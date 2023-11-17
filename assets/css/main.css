@@ -120,6 +120,7 @@ input, select, textarea {
 
 		a:hover {
 			border-color: transparent;
+			background-color: #555;
 		}
 
 /* Icon */
